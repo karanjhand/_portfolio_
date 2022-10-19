@@ -1,0 +1,138 @@
+// .container.about-page{
+//     overflow-y: scroll;
+// }
+
+.stage-cube-cont{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 18%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+     
+}
+
+.cubespinner{
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+
+    div{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background: rgba(255, 255, 255, 0.4);
+        justify-content: center;
+        font-size: 100px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+    }
+
+
+    .face1 {
+        transform: translateZ(100px);
+        color: #dd0031;
+    }
+    .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+        color: #f06529;
+    }
+    .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        color: #28a4d9;
+    }
+    .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        color: #5ed4f4;
+    }
+    .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        color: #efd81d;
+    }
+    .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+        color: #ec4d28;
+    }
+}
+
+@keyframes spincube{
+    from,
+    to {
+        transform: rotateX(0deg), rotateY(0deg), rotateZ(0deg);
+    }
+    16%{
+        transform: rotateY(-90deg);
+
+    }
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66%{
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    83%{
+        transform: rotateY(90deg);
+    }
+}
+
+.division-a{
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    bottom: 10%;
+    width:90%;
+    display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+}
+
+.education{
+    background: #4E9CAF;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    color: white;
+    margin: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.edu{
+    display:grid;
+    text-align: left;
+    gap: 2rem;
+    font-size: 1.2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.education h3{
+    margin: 1.2rem 0.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.education:hover{
+    border-color: #ffd700;
+    background: transparent;
+}
+
+.about-icon{
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,133 @@
+
+
+.portfolio-item-image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        opacity: 0;
+        height: auto;
+        border-radius: 2rem;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+
+    }
+}
+
+.portfolio-item-cta{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+ 
+    .btn{
+        display: block;
+        margin: 1.2rem;
+        width: 50px;
+        height: 10px;
+        background: #4E9CAF;
+        padding: 10px;
+        text-align: center;
+        border-radius: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 400ms ease;
+        color: white;
+    }
+    .btn:hover{
+        background: transparent;
+        border: 1px solid #ffd700;
+    }
+    
+}
+
+p {
+    font-size: 13px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    max-width: fit-content;
+    animation: pulse 1s;
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1.2s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1.3s;
+    }
+}
+h1 {
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    color: #ffd700;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+    &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom:  -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+}
+.divi{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    bottom: 10%;
+    width:70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text-zone-p {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+   // transform: translateY(-50%);
+    width: 35%;
+    //vertical-align: middle;
+    display: table-cell;
+    max-height: 50%;
+
+    .text-animate-hover {
+        &:hover {
+          color: #fff;
+        }
+      }
+  }
+
+.portfolio-item{
+    background: rgb(96, 95, 95);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    color: white;
+    margin: 2rem;
+    display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.portfolio-item h3{
+    margin: 1.2rem 0.2rem;
+}
+
+.portfolio-item:hover{
+    border-color: #ffd700;
+    background: transparent;
+}
