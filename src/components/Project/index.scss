@@ -72,7 +72,7 @@ h1 {
     margin-bottom: 40px;
     left: -10px;
     &:after {
-        content: '<h1/>';
+        content: '';
         font-family: 'La Belle Aurore', cursive;
         color: #ffd700;
         font-size: 18px;
@@ -85,23 +85,14 @@ h1 {
       }
 }
 .divi{
-    position: absolute;
-    top: 60%;
-    left: 15%;
-    bottom: 10%;
+    margin: auto;
     width:70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .text-zone-p {
-    position: absolute;
-    left: 10%;
-    top: 30%;
-   // transform: translateY(-50%);
-    width: 35%;
-    //vertical-align: middle;
-    display: table-cell;
-    max-height: 50%;
+    margin-left: 15rem;
+    margin-top: 10rem;
 
     .text-animate-hover {
         &:hover {
@@ -131,3 +122,10 @@ h1 {
     border-color: #ffd700;
     background: transparent;
 }
+
+
+@media (max-width: 1200px){
+    .divi{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }

@@ -29,19 +29,41 @@ const Contact = () => {
     return(
         <>
             <div className='container contact-page'>
-                <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-                        idx={15}
-                        />
-                    </h1>
-                    <p>Lorem Ipsum hello lorem ipsum lorem ipsum lorfem ispsum lorem ipsum lorem ipsum lorem ipsum lorem iupsum
+                    <div className='content-text'>
+                        <h1>
+                            <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                            idx={15}
+                            />
+                        </h1>
+                        <p>Lorem Ipsum hello lorem ipsum lorem ipsum lorfem ispsum lorem ipsum lorem ipsum lorem ipsum lorem iupsum
 
-                    </p>
+                        </p>
                     </div>
-                    <div className='contact-form'>
+
+                    <div className='contact'>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className='flex'>
+                                <div>
+                                    <input type='text' name="name" placeholder="Name" required/>
+                                </div>
+                                <div>
+                                <input type='email' name="email" placeholder="Email" required/>
+                                </div>
+                            </div>
+                            <div className='subject'>
+                                <input type="text" placeholder='Subject' name='subject' required/>
+                            </div>
+                            <div className='message'>
+                                <textarea placeholder='Message' name='message' required></textarea>
+                            </div>
+                            <input type="submit" className="flat-button" value="SEND"/>
+                        </form>
+                        
+                    </div>
+
+                    {/* <div className='contacto-form'>
                          <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
@@ -61,8 +83,7 @@ const Contact = () => {
                                 </li>
                             </ul>
                          </form>
-                    
-                    </div>
+                    </div> */}
 
                 </div>
             <Loader type='pacman'/>

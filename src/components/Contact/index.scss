@@ -1,14 +1,78 @@
+.contact-page{
+  .content-text{
+    margin-left: 15rem;
+    margin-top: 10rem;
+  }
+}
 
-.contact-form {
-    width: 50%;
-    //margin-top: 20px;
-    position: absolute;
-    top: 114%;
-    left: 25%;
-  
+.contact{
+  margin-left: 15rem;
+  margin-top: 5rem;
+  max-width: 100rem;
+  .flex{
+    display: flex;
+    div{
+      flex-grow: 1;
+      padding: 1rem;
+    }
+  }
+
+  .subject, .message{
+    padding: 1rem;
+  }
+
+  input{
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea{
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+  }
+  .flat-button{
+    margin: 1.2rem;
+    width: 10rem;
+    height: 5rem;
+    background: #4E9CAF;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 400ms ease;
+    color: white;
+    float: right;
+    cursor: pointer;
+
+    &:hover{
+      background: transparent;
+      border: 1px solid #ffd700;
+    }
+      
+  }
+
+}
+
+.contacto-form {
+
     ul {
       padding: 0;
-      margin: 0;
+      max-width: 100rem;
+      margin-left: 15rem;
   
       li {
         padding: 0;
@@ -19,7 +83,7 @@
         overflow: hidden;
         //display: absolute;
         clear: both;
-        position: relative;
+        // position: relative;
         animation: fadeInUp 2s 2s;
         animation-fill-mode: forwards;
       }
@@ -82,4 +146,18 @@
       background: transparent;
       border: 1px solid #ffd700;
     }
+}
+
+
+@media (max-width: 1200px){
+
+  .contact-page{
+    .content-text{
+      margin-left: 8rem;
+    }
+  }
+
+  .contact{
+    margin-left: 8rem;
+  }
 }

@@ -51,7 +51,7 @@
 
     h2{
         color: #8d8d8d;
-        margin-top: 20px;
+        margin-top: 40px;
         font-weight: 400;
         font-family: sans-serif;
         letter-spacing: 3px;
@@ -84,44 +84,68 @@
 
 
 @media screen and (max-width: 1200px) {
-    .tags,
-    .home-page h1:before,
-    .home-page h1:after {
+    // .tags,
+    // .home-page h1:before,
+    // .home-page h1:after {
+    //   display: none;
+    // }
+      
+    // .home-page .text-zone {
+    //   position: initial;
+    //   width: 100%;
+    //   transform: none;
+    //   padding: 10px;
+    //   box-sizing: border-box;
+    // }
+  
+    // .home-page .flat-button {
+    //   float: none;
+    //   display: block;
+    //   margin: 20px auto 0 auto;
+    //   width: 124px;
+    // }
+  
+    // .logo-container {
+    //   position: relative;
+    //   width: 100px;
+    //   height: auto;
+    //   top: 50px;
+    //   right: 0;
+    //   box-sizing: border-box;
+    //   margin: auto;
+    //   left: 0;
+    // }
+
+    // .logo-container svg {
+    //   position: absolute;
+    //   top: auto;
+    //   right: auto;
+    //   bottom: auto;
+    //   left: 0;
+    //   margin: auto;
+    // }
+  }
+
+  @media (max-width: 1200px){
+    .logo-container{
       display: none;
     }
-  
-    .home-page .text-zone {
-      position: initial;
+
+    .home-page .text-zone{
       width: 100%;
-      transform: none;
-      padding: 10px;
-      box-sizing: border-box;
+      margin-left: 4rem;
+      word-wrap: break-word;
     }
-  
-    .home-page .flat-button {
-      float: none;
-      display: block;
-      margin: 20px auto 0 auto;
-      width: 124px;
-    }
-  
-    .logo-container {
-      position: relative;
-      width: 100px;
-      height: auto;
-      top: 50px;
-      right: 0;
-      box-sizing: border-box;
-      margin: auto;
-      left: 0;
-    }
-  
-    .logo-container svg {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
+    .home-page{
+      h1{
+        font-size: 30px;
+
+        img{
+          width: 20px;
+        }
+      } 
+      h2{
+        max-width: 70vw;
+      }
     }
   }
