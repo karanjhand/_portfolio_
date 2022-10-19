@@ -40,7 +40,6 @@
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
-    overflow-y: auto;
 }
 
 .container.about-page{
@@ -107,7 +106,7 @@
     width: 35%;
     vertical-align: middle;
     display: table-cell;
-    max-height: 90%;
+    // max-height: 90%;
   }
 
   .text-animate-hover {
