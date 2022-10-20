@@ -1,7 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import { FaAngular, FaCss3, FaGitAlt, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa'
 import Loader from 'react-loaders'
@@ -74,22 +74,28 @@ const About = () => {
                     <div className='stage-cube-cont'>
                         <div className='cubespinner'>
                             <div className='face1'>
-                                <FontAwesomeIcon icon={FaAngular} color='#DD0031'/>
+                                {/* <FontAwesomeIcon icon={FaAngular} color='#DD0031'/> */}
+                                <FaAngular className='Angular'/>
                             </div>
                             <div className='face2'>
-                                <FontAwesomeIcon icon={FaHtml5} color='#F06529'/>
+                                {/* <FontAwesomeIcon icon={FaHtml5} color='#F06529'/> */}
+                                <FaHtml5/>
                             </div>
                             <div className='face3'>
-                                <FontAwesomeIcon icon={FaCss3} color='#28A4D9'/>
+                                {/* <FontAwesomeIcon icon={FaCss3} color='#28A4D9'/> */}
+                                <FaCss3/>
                             </div>
                             <div className='face4'>
-                                <FontAwesomeIcon icon={FaReact} color='#5ED4F4'/>
+                                {/* <FontAwesomeIcon icon={FaReact} color='#5ED4F4'/> */}
+                                <FaReact/>
                             </div>
                             <div className='face5'>
-                                <FontAwesomeIcon icon={FaJsSquare} color='#EfD81D'/>
+                                {/* <FontAwesomeIcon icon={FaJsSquare} color='#EfD81D'/> */}
+                                <FaJsSquare/>
                             </div>
                             <div className='face6'>
-                                <FontAwesomeIcon icon={FaGitAlt} color='#Ec4D28'/>
+                                {/* <FontAwesomeIcon icon={FaGitAlt} color='#Ec4D28'/> */}
+                                <FaGitAlt/>
                             </div>
                         </div>
 
