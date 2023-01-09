@@ -59,10 +59,12 @@ const About = () => {
                                 </div>
                                 <h3>Experience</h3>
                                 <div className='edu text-center'>
+                                    <h4>IT Technician </h4>
+                                    <h4> Simon Fraser University (January 2023 - present)</h4>
                                     <h4>Team Lead (Technical Support) </h4>
-                                    <h4>24-7Intouch (2021 - 2021)</h4>
+                                    <h4>24-7Intouch (July - December 2021)</h4>
                                     <h4>Technical Support Customer Advisor (Level 2) </h4>
-                                    <h4>24-7Intouch (2020 - 2021</h4>
+                                    <h4>24-7Intouch (August 2020 - June 2021)</h4>
                                 </div>
                             </article>
                         </div>

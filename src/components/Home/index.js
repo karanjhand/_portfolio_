@@ -14,7 +14,7 @@ const Home = () => {
 
 
 
-    //check this one out later for the hover effect, not working for some reason.
+    
 
     useEffect(() => {
         setTimeout(
@@ -40,9 +40,9 @@ const Home = () => {
                     <br/>
                     <AnimatedLetters letterClass={letterClass}
                     strArray={jobArray}
-                    idx={22}/>
+                    idx={16}/>
                     </h1>
-                    <h2>Frontend Developer / Javascript Expert / Game Developer</h2>
+                    <h2>Frontend Developer / Javascript Expert</h2>
                     <Link to='/contact' className="flat-button">CONTACT ME</Link>
                 </div>
                 {/* <Logo/> */}

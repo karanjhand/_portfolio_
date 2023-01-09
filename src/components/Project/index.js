@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
 import IMG1 from '../../assets/images/imageproject.jpeg'
+import IMG2 from '../../assets/images/imageproject-2.jpeg'
 
 const Project = () => {
     const[letterClass, setLetterClass] = useState('text-animate')
@@ -29,11 +30,11 @@ const Project = () => {
                 <div className='divi'>
                         <article className='portfolio-item'>
                             <div className='portfolio-item-image'>
-                                <img src={IMG1} alt=''/>
+                                <img src={IMG2} alt=''/>
                             </div>
                             <h3>Memory Lane App</h3>
                             <div className='portfolio-item-cta'>
-                                <a href='https://github.com/karanjhand/ClinicDatabase' className='btn' target='blank'>Github</a>
+                                <a href='https://csil-git1.cs.surrey.sfu.ca/it-just-works/cmpt-276' className='btn' target='blank'>Github</a>
                             </div>
                     </article>
                     <article className='portfolio-item'>
