@@ -3,7 +3,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import {useRef} from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const form = useRef();
@@ -11,7 +11,14 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_xc5fw3d', 'template_qe6hs0m', form.current, 'd1wHZSprm7oL78Z03')
+    emailjs.sendForm('service_xc5fw3d', 'template_qe6hs0m', form.current, { publicKey: 'e2TfhotLOnyk4V4m5',}).then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
     e.target.reset();
     alert("E-mail sent");  
   };
@@ -37,7 +44,8 @@ const Contact = () => {
                             idx={15}
                             />
                         </h1>
-                        <p>Lorem Ipsum hello lorem ipsum lorem ipsum lorfem ispsum lorem ipsum lorem ipsum lorem ipsum lorem iupsum
+                        <p>
+                            Please feel free to contact me via email <b>karanjhand99@gmail.com</b>
 
                         </p>
                     </div>

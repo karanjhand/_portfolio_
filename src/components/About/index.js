@@ -47,9 +47,9 @@ const About = () => {
                                 <h3>Education</h3>
                                 <div className='edu text-center'>
                                     <h4>Langara College </h4>
-                                    <h4>(2018 - 2021)</h4>
+                                    <h4>Associates of Science: Computer Science (2018 - 2020)</h4>
                                     <h4>Simon Fraser University </h4>
-                                    <h4>(2021 - present)</h4>
+                                    <h4>Bachelors of Science: Computer Science (2022 - present)</h4>
                                 </div>
                             </article>
 
@@ -59,8 +59,10 @@ const About = () => {
                                 </div>
                                 <h3>Experience</h3>
                                 <div className='edu text-center'>
+                                    <h4>Software Developer Co-op</h4>
+                                    <h4>Natural Resources Canada - National Forest Information System (May 2023 - December 2023)</h4>
                                     <h4>IT Technician </h4>
-                                    <h4> Simon Fraser University (January 2023 - present)</h4>
+                                    <h4> Simon Fraser University (January 2023 - April 2023)</h4>
                                     <h4>Team Lead (Technical Support) </h4>
                                     <h4>24-7Intouch (July - December 2021)</h4>
                                     <h4>Technical Support Customer Advisor (Level 2) </h4>
@@ -71,7 +73,7 @@ const About = () => {
                         
                     </div>
 
-                    
+
 
                     <div className='stage-cube-cont'>
                         <div className='cubespinner'>

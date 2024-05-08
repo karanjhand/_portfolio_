@@ -15,7 +15,7 @@ const Home = () => {
 
 
     
-
+    
     useEffect(() => {
         setTimeout(
             () => setLetterClass('text-animate-hover'), 
@@ -42,7 +42,7 @@ const Home = () => {
                     strArray={jobArray}
                     idx={16}/>
                     </h1>
-                    <h2>Frontend Developer / Javascript Expert</h2>
+                    <h2>Frontend Developer / Java Expert</h2>
                     <Link to='/contact' className="flat-button">CONTACT ME</Link>
                 </div>
                 {/* <Logo/> */}

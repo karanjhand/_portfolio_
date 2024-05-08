@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
 import IMG1 from '../../assets/images/imageproject.jpeg'
 import IMG2 from '../../assets/images/imageproject-2.jpeg'
+import IMG3 from '../../assets/images/TicTacToe.jpeg'
 
 const Project = () => {
     const[letterClass, setLetterClass] = useState('text-animate')
@@ -28,6 +29,15 @@ const Project = () => {
                     </h1>
                 </div>
                 <div className='divi'>
+                        <article className='portfolio-item'>
+                            <div className='portfolio-item-image'>
+                                <img src={IMG3} alt=''/>
+                            </div>
+                            <h3>Tic-Tac-Toe</h3>
+                            <div className='portfolio-item-cta'>
+                                <a href='https://github.com/karanjhand/Tic-Tac-Toe' className='btn' target='blank'>Github</a>
+                            </div>
+                    </article>
                         <article className='portfolio-item'>
                             <div className='portfolio-item-image'>
                                 <img src={IMG2} alt=''/>
