@@ -10,20 +10,25 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_xc5fw3d', 'template_qe6hs0m', form.current, { publicKey: 'e2TfhotLOnyk4V4m5',}).then(
+    const SERVICE_ID = 'service_xc5fw3d';
+    const TEMPLATE_ID = 'template_qe6hs0m';
+    const PUBLIC_KEY ='e2TfhotLOnyk4V4m5';
+    
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
         () => {
           console.log('SUCCESS!');
+          alert("E-mail sent");  
         },
         (error) => {
           console.log('FAILED...', error.text);
+          alert("E-mail not sent");  
         },
       );
     e.target.reset();
-    alert("E-mail sent");  
+    
   };
 
-    
+
     const[letterClass, setLetterClass] = useState('text-animate')
     
     useEffect(() => {
