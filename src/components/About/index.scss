@@ -173,9 +173,9 @@
 .edu {
     display: flex;
     flex-direction: column;
-    align-items: center; // Center align the text
-    text-align: center; // Ensure text is centered
-    gap: 2rem; // Space between the two entries
+    align-items: center; 
+    text-align: center; 
+    gap: 2rem; 
     font-size: 1.2rem;
 }
 .education h5{
@@ -219,7 +219,12 @@
 
         
     }
-
+    .text-zone p{
+        font-size: 2vh;
+    }
+    .text-zone h1{
+        font-size: 6vh;
+    }
     .yo{
         min-height: 10rem;
     }
