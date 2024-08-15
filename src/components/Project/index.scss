@@ -3,14 +3,16 @@
 .portfolio-item-image{
     border-radius: 1.5rem;
     overflow: hidden;
-
+    
     img{
-        width: 40rem;
+        width: 80%;
+        max-width: 40rem;
         margin-left: auto;
         margin-right: auto;
         display: block;
         opacity: 0;
-        height: 25rem;
+        height: auto;
+        max-height: 25rem;
         border-radius: 2rem;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
