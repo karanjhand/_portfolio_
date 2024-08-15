@@ -5,12 +5,12 @@
     overflow: hidden;
 
     img{
-        width: 20rem;
+        width: 40rem;
         margin-left: auto;
         margin-right: auto;
         display: block;
         opacity: 0;
-        height: 20rem;
+        height: 25rem;
         border-radius: 2rem;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
@@ -100,14 +100,14 @@ h1 {
         }
       }
   }
-
+  
 .portfolio-item{
-    background: rgb(96, 95, 95);
+    background: rgb(255, 255, 255);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: all 400ms ease;
-    color: white;
+    color: Black;
     margin: 2rem;
     display: grid;
     // grid-template-columns: repeat(2, 1fr);
@@ -121,6 +121,7 @@ h1 {
 .portfolio-item:hover{
     border-color: #ffd700;
     background: transparent;
+    color: white;
 }
 
 
