@@ -3,7 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
-import { FaAngular, FaCss3, FaGitAlt, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa'
+import { FaAngular, FaBold, FaCss3, FaGitAlt, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa'
 import Loader from 'react-loaders'
 import { FaUsers } from 'react-icons/fa'
 import { FaAward } from 'react-icons/fa'
@@ -31,11 +31,12 @@ const About = () => {
                                 idx={15}
                             />
                         </h1>
-                        <p> 
+                        <p> <b>
                             Innovative, task-driven professional with experience in making mobile phone apps and websites. 
-                            Currently pursuing a computer science degree at SFU. Proficient in developing and
-                            maintaining cloud databases, creating user interfaces, writing, and testing codes and 
+                            Currently pursuing computer science degree at SFU. Proficient in developing and
+                            maintaining databases, creating user interfaces, writing, and testing codes and 
                             troubleshooting simple/complex issues through ingenious innovation.
+                            </b>
                         </p>
                         
 
@@ -46,27 +47,43 @@ const About = () => {
                                 </div>
                                 <h3>Education</h3>
                                 <div className='edu text-center'>
-                                    <h4>Langara College </h4>
-                                    <h4>Associates of Science: Computer Science (2018 - 2020)</h4>
+                                    <div>
                                     <h4>Simon Fraser University </h4>
-                                    <h4>Bachelors of Science: Computer Science (2022 - present)</h4>
+                                    <h5>Bachelors of Science: Computer Science (2022 - Present)</h5>
+                                    </div>
+                                    <div>
+                                    <h4>Langara College </h4>
+                                    <h5>Associates of Science: Computer Science (2018 - 2020)</h5>
+                                    </div>
                                 </div>
                             </article>
-
+                            
                             <article className='education'>
                                 <div className='text-center'>
                                     <FaUsers className = 'about-icon'/>
                                 </div>
                                 <h3>Experience</h3>
                                 <div className='edu text-center'>
-                                    <h4>Software Developer Co-op</h4>
-                                    <h4>Natural Resources Canada - National Forest Information System (May 2023 - December 2023)</h4>
-                                    <h4>IT Technician </h4>
-                                    <h4> Simon Fraser University (January 2023 - April 2023)</h4>
+                                    <div>
+                                        <h4>Software Developer Co-op</h4>
+                                        <h5>Natural Resources Canada (Department: National Forest Information System)</h5>
+                                        <h5>(May 2023 - December 2023)</h5>
+                                    </div>
+                                    <div>
+                                        <h4>IT Technician </h4>
+                                        <h5> Simon Fraser University</h5>
+                                        <h5>(January 2023 - April 2023)</h5>
+                                    </div>
+                                    <div>
                                     <h4>Team Lead (Technical Support) </h4>
-                                    <h4>24-7Intouch (July - December 2021)</h4>
-                                    <h4>Technical Support Customer Advisor (Level 2) </h4>
-                                    <h4>24-7Intouch (August 2020 - June 2021)</h4>
+                                    <h5>24-7Intouch</h5>
+                                    <h5>(July 2021 - December 2021)</h5>
+                                    </div>
+                                    <div>
+                                    <h4>Technical Support Customer Advisor (Tier 2) </h4>
+                                    <h5>24-7Intouch</h5>
+                                    <h5>(August 2020 - June 2021)</h5>
+                                    </div>
                                 </div>
                             </article>
                         </div>
