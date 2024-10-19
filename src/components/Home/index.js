@@ -42,13 +42,13 @@ const Home = () => {
                     strArray={jobArray}
                     idx={16}/>
                     </h1>
-                    <h2>Frontend Developer / Java Expert</h2>
+                    <h2>Java Expert / Developer</h2>
                     <Link to='/contact' className="flat-button">CONTACT ME</Link>
                 </div>
                 {/* <Logo/> */}
             </div>
             <Loader type='pacman'/>
-
+            
         </>
     )
 }

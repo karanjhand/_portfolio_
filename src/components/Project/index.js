@@ -7,6 +7,7 @@ import IMG2 from '../../assets/images/imageproject-2.jpeg'
 import IMG3 from '../../assets/images/TicTacToe.jpeg'
 import IMG4 from '../../assets/images/proxyServer2.jpeg'
 import IMG5 from '../../assets/images/dataTransfer.jpeg'
+import IMG6 from '../../assets/images/Stress-Meter.jpeg'
 
 const Project = () => {
     const[letterClass, setLetterClass] = useState('text-animate')
@@ -31,6 +32,15 @@ const Project = () => {
                     </h1>
                 </div>
                 <div className='divi'>
+                        <article className='portfolio-item'>
+                            <div className='portfolio-item-image'>
+                                <img src={IMG6} alt=''/>
+                            </div>
+                            <h3>Stress Meter - Mobile Application</h3>
+                            <div className='portfolio-item-cta'>
+                                <a href='https://github.com/karanjhand/Stress-Meter' className='btn' target='blank'>Github</a>
+                            </div>
+                        </article>
                         <article className='portfolio-item'>
                             <div className='portfolio-item-image'>
                                 <img src={IMG4} alt=''/>

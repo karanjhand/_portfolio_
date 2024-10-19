@@ -64,16 +64,17 @@ const About = () => {
                                 </div>
                                 <h3>Experience</h3>
                                 <div className='edu text-center'>
+                                <div>
+                                        <h4>IT Technician </h4>
+                                        <h5> Simon Fraser University</h5>
+                                        <h5>(January 2023 - Present)</h5>
+                                    </div>
                                     <div>
                                         <h4>Software Developer Co-op</h4>
                                         <h5>Natural Resources Canada (Department: National Forest Information System)</h5>
                                         <h5>(May 2023 - December 2023)</h5>
                                     </div>
-                                    <div>
-                                        <h4>IT Technician </h4>
-                                        <h5> Simon Fraser University</h5>
-                                        <h5>(January 2023 - April 2023)</h5>
-                                    </div>
+                                    
                                     <div>
                                     <h4>Team Lead (Technical Support) </h4>
                                     <h5>24-7Intouch</h5>
