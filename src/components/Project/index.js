@@ -8,6 +8,8 @@ import IMG3 from '../../assets/images/TicTacToe.jpeg'
 import IMG4 from '../../assets/images/proxyServer2.jpeg'
 import IMG5 from '../../assets/images/dataTransfer.jpeg'
 import IMG6 from '../../assets/images/Stress-Meter.jpeg'
+import IMG7 from '../../assets/images/PetUniverse.jpg'
+import IMG8 from '../../assets/images/codeVisualizer.jpg'
 
 const Project = () => {
     const[letterClass, setLetterClass] = useState('text-animate')
@@ -32,6 +34,27 @@ const Project = () => {
                     </h1>
                 </div>
                 <div className='divi'>
+                         <article className='portfolio-item'>
+                            <div className='portfolio-item-image'>
+                                <img src={IMG8} alt=''/>
+                            </div>
+                            <h3>Visual DOM Representation (VDR) </h3>
+                            <div className='portfolio-item-cta'>
+                                <a href='https://github.com/karanjhand/CodeVisualizerVDR' className='btn' target='blank'>Github</a>
+                            </div>
+                        </article>
+                        <article className='portfolio-item'>
+                            <div className='portfolio-item-image'>
+                                <img src={IMG7} alt=''/>
+                            </div>
+                            <h3>Pet Universe</h3>
+                            <div className='portfolio-item-cta'>
+                                <a href='https://github.com/anniecee/petuniverse' className='btn' target='blank'>Github</a>
+                            </div>
+                            <div className='portfolio-item-cta'>
+                                <a href='https://sites.google.com/view/cmpt362-petuniverse?usp=sharing' className='btn' target='blank'>Info</a>
+                            </div>
+                        </article>
                         <article className='portfolio-item'>
                             <div className='portfolio-item-image'>
                                 <img src={IMG6} alt=''/>
